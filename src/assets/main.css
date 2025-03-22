@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 基础游戏风格 */
+:root {
+  --primary-color: #00a8ff;
+  --secondary-color: #ff9f43;
+  --background-dark: #0f1923;
+  --background-medium: #1a2a35;
+  --background-light: #253540;
+  --text-primary: #ffffff;
+  --text-secondary: #b3c3d3;
+  --highlight: #ffb400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+
+/* 游戏风格组件样式 */
+.game-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  background-image: 
+    radial-gradient(circle at top right, rgba(0, 168, 255, 0.1), transparent 70%),
+    radial-gradient(circle at bottom left, rgba(255, 159, 67, 0.05), transparent 70%);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-header {
+  background-color: rgba(26, 42, 53, 0.9);
+  border-bottom: 1px solid rgba(0, 168, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+  position: relative;
+}
+
+.game-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-color), transparent);
+}
+
+.game-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.game-tab {
+  background-color: var(--background-light);
+  color: var(--text-secondary);
+  border: 1px solid rgba(0, 168, 255, 0.2);
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-tab.active {
+  background-color: rgba(0, 168, 255, 0.2);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+}
+
+.game-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+.model-viewer {
+  flex: 2;
+  background: linear-gradient(135deg, var(--background-medium), var(--background-dark));
+  border-radius: 8px;
+  border: 1px solid rgba(0, 168, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 
+              inset 0 0 10px rgba(0, 168, 255, 0.1);
+  overflow: hidden;
+  position: relative;
+  min-height: 500px;
+}
+
+.control-panel {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to bottom, var(--background-medium), var(--background-dark));
+  border-radius: 8px;
+  border: 1px solid rgba(0, 168, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.game-btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.primary-btn {
+  background: linear-gradient(45deg, var(--primary-color), #36d1dc);
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
+}
+
+.secondary-btn {
+  background: rgba(26, 42, 53, 0.8);
+  color: var(--text-secondary);
+  border: 1px solid rgba(0, 168, 255, 0.3);
+}
+
+.slider-container {
+  margin-bottom: 20px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.slider-label {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.slider-value {
+  background-color: rgba(26, 42, 53, 0.8);
+  color: var(--primary-color);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.game-slider {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 168, 255, 0.1);
+  border-radius: 3px;
+  appearance: none;
+  outline: none;
+}
+
+.game-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.preset-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(26, 42, 53, 0.7);
+  border: 1px solid rgba(0, 168, 255, 0.2);
+  border-radius: 6px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preset-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.preset-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  background-color: var(--background-light);
+  border: 2px solid rgba(0, 168, 255, 0.3);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .game-content {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .game-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 15px;
+  }
+  
+  .game-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .game-tab {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  .model-viewer {
+    min-height: 350px;
+    max-height: 400px;
+  }
+  
+  .control-panel {
+    padding: 15px;
+  }
+}
+
+/* 添加触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+  .game-btn, .preset-card, .game-tab {
+    cursor: default; /* 移除触摸设备上的鼠标光标 */
+  }
+  
+  .game-btn:active, .preset-card:active, .game-tab:active {
+    transform: scale(0.98); /* 按下反馈 */
+  }
+  
+  .preset-card:hover {
+    transform: none; /* 移除悬停效果 */
+  }
+  
+  .preset-card:active {
+    transform: translateY(-2px); /* 减小触摸时的移动距离 */
+  }
+} 

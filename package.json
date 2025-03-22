@@ -1,0 +1,30 @@
+{
+  "name": "face-customization",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.15",
+    "d3": "^7.9.0",
+    "element-plus": "^2.9.4",
+    "gsap": "^3.12.7",
+    "lottie-web": "^5.12.2",
+    "tailwindcss": "^4.0.15",
+    "three": "^0.173.0",
+    "three-gltf-loader": "^1.111.0",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass": "^1.85.0",
+    "sass-embedded": "^1.85.0",
+    "vite": "^6.1.0"
+  }
+}

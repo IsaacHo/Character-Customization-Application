@@ -1,0 +1,18 @@
+// 使用 @use 导入变量模块
+@use '_variables' as v;
+
+.controls-container {
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    gap: v.$gap;
+    margin-top: v.$gap;
+}
+
+.preset-container {
+    display: flex;
+    gap: v.$gap;
+    margin-top: v.$gap;
+}

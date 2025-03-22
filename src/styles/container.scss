@@ -1,0 +1,18 @@
+// 使用 @use 导入变量模块
+@use '_variables' as v;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$gap;
+    background-color: white;
+    padding: v.$gap;
+    border-radius: v.$border-radius;
+    box-shadow: v.$box-shadow;
+    width: 100%;
+    max-width: v.$container-max-width;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}

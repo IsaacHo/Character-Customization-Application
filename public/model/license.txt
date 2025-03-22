@@ -1,0 +1,11 @@
+Model Information:
+* title:	Facego 人脸模型
+* source:	https://sketchfab.com/3d-models/facego-240ce65bca1f48f28649aba1756b3583
+* author:	yunxiaoql (https://sketchfab.com/yunxiaoql)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Facego 人脸模型" (https://sketchfab.com/3d-models/facego-240ce65bca1f48f28649aba1756b3583) by yunxiaoql (https://sketchfab.com/yunxiaoql) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
