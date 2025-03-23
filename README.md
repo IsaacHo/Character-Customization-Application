@@ -104,7 +104,7 @@ The format of saved character data is as follows:
 [ ] Link hairstyles to the 3D head model  
 [ ] Link accessories to the 3D head model  
 [ ] Adjust 3D model for preset faces  
-[ ] Adjust 3D Fusion Adjustments After Portrait Photography for preset faces 
+[ ] Adjust 3D Fusion Adjustments After Portrait Photography for preset faces  
 [ ] Adjust preview layout for handheld devices  
 
 ### Contribution
