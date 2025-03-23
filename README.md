@@ -4,7 +4,7 @@
 
 ## Character Customization Application
 
-This is a character customization application based on Vue.js and Three.js, allowing users to customize character facial features, hairstyles, and accessories. Users can save and load character settings using IndexedDB for data storage.
+This is a character customization application based on Vue.js and Three.js, use .cursorrules and cost 2 hour setup base, allowing users to customize character facial features, hairstyles, and accessories. Users can save and load character settings using IndexedDB for data storage.
 
 ### Features Overview
 
@@ -15,7 +15,7 @@ This is a character customization application based on Vue.js and Three.js, allo
 
 ### Tech Stack
 
-- **Frontend**: Vue.js, Three.js, GSAP
+- **Frontend**: Vue.js, Three.js, Vite, GSAP
 - **Data Storage**: IndexedDB
 
 ### Installation and Running
@@ -33,10 +33,10 @@ This is a character customization application based on Vue.js and Three.js, allo
    npm install
    ```
 
-3. **Run the Development Server**
+3. **Run the Development**
 
    ```bash
-   npm run serve
+   npm run dev
    ```
 
 4. **Open in Browser**
@@ -104,6 +104,7 @@ The format of saved character data is as follows:
 [ ] Link hairstyles to the 3D head model  
 [ ] Link accessories to the 3D head model  
 [ ] Adjust 3D model for preset faces  
+[ ] Adjust 3D Fusion Adjustments After Portrait Photography for preset faces 
 [ ] Adjust preview layout for handheld devices  
 
 ### Contribution
